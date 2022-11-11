@@ -15,10 +15,6 @@ const initialFormState = { thumbnailPath: '', contentPath: '' }
 
 export const s3Client = new S3Client({
   region: REGION,
-  credentials: {
-    accessKeyId: 'XXXXXXXXX',
-    secretAccessKey: 'YYYYYYYYY'
-  }
 });
 
 function App() {
