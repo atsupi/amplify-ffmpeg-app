@@ -1,12 +1,12 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const createContentList = /* GraphQL */ `
-  mutation CreateContentList(
-    $input: CreateContentListInput!
+export const updateContentList = /* GraphQL */ `
+  mutation UpdateContentList(
+    $input: UpdateContentListInput!
     $condition: ModelContentListConditionInput
   ) {
-    createContentList(input: $input, condition: $condition) {
+    updateContentList(input: $input, condition: $condition) {
       id
       contentBase
       thumbnailPath
@@ -19,12 +19,12 @@ export const createContentList = /* GraphQL */ `
     }
   }
 `;
-export const updateContentList = /* GraphQL */ `
-  mutation UpdateContentList(
-    $input: UpdateContentListInput!
+export const createContentList = /* GraphQL */ `
+  mutation CreateContentList(
+    $input: CreateContentListInput!
     $condition: ModelContentListConditionInput
   ) {
-    updateContentList(input: $input, condition: $condition) {
+    createContentList(input: $input, condition: $condition) {
       id
       contentBase
       thumbnailPath

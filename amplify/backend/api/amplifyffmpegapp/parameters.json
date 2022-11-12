@@ -1,10 +1,10 @@
 {
-  "AppSyncApiName": "reactapp",
+  "AppSyncApiName": "amplifyffmpegapp",
   "DynamoDBBillingMode": "PAY_PER_REQUEST",
   "DynamoDBEnableServerSideEncryption": false,
   "AuthCognitoUserPoolId": {
     "Fn::GetAtt": [
-      "authreactappa8c16c6e",
+      "authamplifyffmpegapp3cb22113",
       "Outputs.UserPoolId"
     ]
   }

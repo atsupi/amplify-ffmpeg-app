@@ -1,6 +1,6 @@
 export type AmplifyDependentResourcesAttributes = {
     "auth": {
-        "reactappa8c16c6e": {
+        "amplifyffmpegapp3cb22113": {
             "IdentityPoolId": "string",
             "IdentityPoolName": "string",
             "UserPoolId": "string",
@@ -11,7 +11,8 @@ export type AmplifyDependentResourcesAttributes = {
         }
     },
     "api": {
-        "reactapp": {
+        "amplifyffmpegapp": {
+            "GraphQLAPIKeyOutput": "string",
             "GraphQLAPIIdOutput": "string",
             "GraphQLAPIEndpointOutput": "string"
         }

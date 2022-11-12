@@ -1,6 +1,6 @@
 {
   "auth": {
-    "reactappa8c16c6e": {
+    "amplifyffmpegapp3cb22113": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -26,13 +26,13 @@
     }
   },
   "api": {
-    "reactapp": {
+    "amplifyffmpegapp": {
       "service": "AppSync",
       "providerPlugin": "awscloudformation",
       "dependsOn": [
         {
           "category": "auth",
-          "resourceName": "reactappa8c16c6e",
+          "resourceName": "amplifyffmpegapp3cb22113",
           "attributes": [
             "UserPoolId"
           ]
@@ -41,12 +41,19 @@
       "output": {
         "authConfig": {
           "defaultAuthentication": {
-            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-            "userPoolConfig": {
-              "userPoolId": "authreactappa8c16c6e"
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
             }
           },
-          "additionalAuthenticationProviders": []
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authamplifyffmpegapp3cb22113"
+              }
+            }
+          ]
         }
       }
     }
