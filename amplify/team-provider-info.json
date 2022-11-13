@@ -1,19 +1,32 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-amplifyffmpegapp-dev-13249-authRole",
-      "UnauthRoleArn": "arn:aws:iam::074682543290:role/amplify-amplifyffmpegapp-dev-13249-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::074682543290:role/amplify-amplifyffmpegapp-dev-13249-authRole",
+      "AuthRoleName": "amplify-amplifyffmpegapp-dev-164233-authRole",
+      "UnauthRoleArn": "arn:aws:iam::074682543290:role/amplify-amplifyffmpegapp-dev-164233-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::074682543290:role/amplify-amplifyffmpegapp-dev-164233-authRole",
       "Region": "ap-northeast-1",
-      "DeploymentBucketName": "amplify-amplifyffmpegapp-dev-13249-deployment",
-      "UnauthRoleName": "amplify-amplifyffmpegapp-dev-13249-unauthRole",
-      "StackName": "amplify-amplifyffmpegapp-dev-13249",
-      "StackId": "arn:aws:cloudformation:ap-northeast-1:074682543290:stack/amplify-amplifyffmpegapp-dev-13249/a6617a20-62a7-11ed-ac48-06a9d9a6bf97",
-      "AmplifyAppId": "ddcs9rwtx24jz"
+      "DeploymentBucketName": "amplify-amplifyffmpegapp-dev-164233-deployment",
+      "UnauthRoleName": "amplify-amplifyffmpegapp-dev-164233-unauthRole",
+      "StackName": "amplify-amplifyffmpegapp-dev-164233",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:074682543290:stack/amplify-amplifyffmpegapp-dev-164233/c1ec4f70-6326-11ed-8faa-0a73cb141335",
+      "AmplifyAppId": "dwti3d2f43oqf"
+    }
+  },
+  "main": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyffmpegapp-main-170942-authRole",
+      "UnauthRoleArn": "arn:aws:iam::074682543290:role/amplify-amplifyffmpegapp-main-170942-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::074682543290:role/amplify-amplifyffmpegapp-main-170942-authRole",
+      "Region": "ap-northeast-1",
+      "DeploymentBucketName": "amplify-amplifyffmpegapp-main-170942-deployment",
+      "UnauthRoleName": "amplify-amplifyffmpegapp-main-170942-unauthRole",
+      "StackName": "amplify-amplifyffmpegapp-main-170942",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:074682543290:stack/amplify-amplifyffmpegapp-main-170942/872e2d00-632a-11ed-ad9a-0a39d837891b",
+      "AmplifyAppId": "dwti3d2f43oqf"
     },
     "categories": {
       "auth": {
-        "amplifyffmpegapp3cb22113": {}
+        "amplifyffmpegapp85b1cea9": {}
       },
       "api": {
         "amplifyffmpegapp": {}

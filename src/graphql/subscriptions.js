@@ -2,11 +2,8 @@
 // this is an auto generated file. This will be overwritten
 
 export const onCreateContentList = /* GraphQL */ `
-  subscription OnCreateContentList(
-    $filter: ModelSubscriptionContentListFilterInput
-    $owner: String
-  ) {
-    onCreateContentList(filter: $filter, owner: $owner) {
+  subscription OnCreateContentList {
+    onCreateContentList {
       id
       contentBase
       thumbnailPath
@@ -20,11 +17,8 @@ export const onCreateContentList = /* GraphQL */ `
   }
 `;
 export const onUpdateContentList = /* GraphQL */ `
-  subscription OnUpdateContentList(
-    $filter: ModelSubscriptionContentListFilterInput
-    $owner: String
-  ) {
-    onUpdateContentList(filter: $filter, owner: $owner) {
+  subscription OnUpdateContentList {
+    onUpdateContentList {
       id
       contentBase
       thumbnailPath
@@ -38,11 +32,8 @@ export const onUpdateContentList = /* GraphQL */ `
   }
 `;
 export const onDeleteContentList = /* GraphQL */ `
-  subscription OnDeleteContentList(
-    $filter: ModelSubscriptionContentListFilterInput
-    $owner: String
-  ) {
-    onDeleteContentList(filter: $filter, owner: $owner) {
+  subscription OnDeleteContentList {
+    onDeleteContentList {
       id
       contentBase
       thumbnailPath

@@ -1,6 +1,6 @@
 {
   "auth": {
-    "amplifyffmpegapp3cb22113": {
+    "amplifyffmpegapp85b1cea9": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -32,7 +32,7 @@
       "dependsOn": [
         {
           "category": "auth",
-          "resourceName": "amplifyffmpegapp3cb22113",
+          "resourceName": "amplifyffmpegapp85b1cea9",
           "attributes": [
             "UserPoolId"
           ]
@@ -50,7 +50,7 @@
             {
               "authenticationType": "AMAZON_COGNITO_USER_POOLS",
               "userPoolConfig": {
-                "userPoolId": "authamplifyffmpegapp3cb22113"
+                "userPoolId": "authamplifyffmpegapp85b1cea9"
               }
             }
           ]

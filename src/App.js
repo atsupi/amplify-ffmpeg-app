@@ -8,7 +8,6 @@ import { createContentList as createContentListMutation, deleteContentList as de
 import ListContent from './components/ListContent';
 import { GetObjectCommand } from '@aws-sdk/client-s3';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
-//import { fromIni } from '@aws-sdk/credential-providers';
 
 const REGION = "ap-northeast-1";
 const initialFormState = { thumbnailPath: '', contentPath: '' }  
