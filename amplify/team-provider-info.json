@@ -30,6 +30,12 @@
       },
       "api": {
         "amplifyffmpegapp": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "dwti3d2f43oqf",
+          "type": "cicd"
+        }
       }
     }
   }
