@@ -13,7 +13,6 @@ function ListContent (props) {
                     <th>contentBase</th>
                     <th>thumbnailPath</th>
                     <th>contentPath</th>
-                    <th>name</th>
                     <th>owner</th>
                     <th>description</th>
                     <th>duration</th>

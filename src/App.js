@@ -8,25 +8,46 @@ import { createContentList as createContentListMutation, deleteContentList as de
 import ListContent from './components/ListContent';
 import { GetObjectCommand } from '@aws-sdk/client-s3';
 import { getSignedUrl } from '@aws-sdk/s3-request-presigner';
+import { Auth } from 'aws-amplify' 
+//import { createRenderer } from 'react-dom/test-utils';
 
 const REGION = "ap-northeast-1";
 const initialFormState = { thumbnailPath: '', contentPath: '' }  
 
-export const s3Client = new S3Client({
-  region: REGION,
-});
+export let s3Client = new S3Client({ region: REGION });
+
+const getAuth: () => void = async () => {   
+  try {     
+    const cred = await Auth.currentCredentials();     
+    console.log(cred.authenticated)    // true     
+    console.log(cred.accessKeyId)      // 
+//    console.log(cred.secretAccessKey)  // 
+    const param = {
+      region: REGION,
+      credentials: {
+        accessKeyId: cred.accessKeyId,
+        secretAccessKey: cred.secretAccessKey
+      }
+    }
+    s3Client = new S3Client(param);
+  } catch (e) {     
+    console.error(e)   
+  } 
+}
 
 function App() {
     const [contentlists, setContentlists] = useState([]);  
     const [formData, setFormData] = useState(initialFormState);  
     useEffect(() => {  
+      getAuth();
       fetchContentlist();  
     }, []);  
     async function fetchContentlist() {  
       const apiData = await API.graphql({ query: listContentLists});  
       setContentlists(apiData.data.listContentLists.items);  
       console.log("fetchContentlist()");
-      const item = contentlists.map(note => {
+      console.log(contentlists[0]);
+      const item = contentlists.map ( note => {
         try {
           const bucketParams = {
             Bucket: note.contentBase,
@@ -40,15 +61,17 @@ function App() {
           note.image = response.text;
           console.log("Got presigned url for thumbnail %s", response.text);
           return {
-            result: 200
+            resule: 200
           }
         } catch (e) {
+          console.log("Caught signal in fetchContentlist");
           console.log(e.message);
           return {
-            result: 500
+            resule: 500
           }
         }
       });
+      console.log(item);
     }  
     async function createContentlist() {  
       if (!formData.AssetType || !formData.ReportBy || !formData.Storage) return;  

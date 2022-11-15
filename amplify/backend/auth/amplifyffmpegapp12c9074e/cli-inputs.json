@@ -1,10 +1,8 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "amplifyffmpegapp85b1cea9_identitypool_85b1cea9",
-    "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "amplif85b1cea9",
-    "userPoolName": "amplifyffmpegapp85b1cea9_userpool_85b1cea9",
+    "resourceNameTruncated": "amplif12c9074e",
+    "userPoolName": "amplifyffmpegapp12c9074e_userpool_12c9074e",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -31,14 +29,40 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "amplif85b1cea9_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "amplif12c9074e_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "85b1cea9",
-    "resourceName": "amplifyffmpegapp85b1cea9",
-    "authSelections": "identityPoolAndUserPool",
+    "sharedId": "12c9074e",
+    "resourceName": "amplifyffmpegapp12c9074e",
+    "authSelections": "userPoolOnly",
     "useDefault": "default",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
-    "useEnabledMfas": false
+    "useEnabledMfas": false,
+    "authRoleArn": {
+      "Fn::GetAtt": [
+        "AuthRole",
+        "Arn"
+      ]
+    },
+    "unauthRoleArn": {
+      "Fn::GetAtt": [
+        "UnauthRole",
+        "Arn"
+      ]
+    },
+    "breakCircularDependency": false,
+    "dependsOn": [],
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "triggers": {},
+    "hostedUI": false,
+    "parentStack": {
+      "Ref": "AWS::StackId"
+    },
+    "permissions": [],
+    "authTriggerConnections": [
+      "{\"triggerType\":\"PostConfirmation\",\"lambdaFunctionName\":\"amplifyffmpegapp12c9074ePostConfirmation\"}"
+    ],
+    "authProviders": []
   }
-} 
+}

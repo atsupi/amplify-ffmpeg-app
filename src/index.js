@@ -7,6 +7,16 @@ import Amplify from 'aws-amplify';
 import config from './aws-exports';
 Amplify.configure(config);
 
+const amplifyConfig = {
+  Auth: {
+    region: 'ap-northeast-1',
+    userPoolId: 'ap-northeast-1_DcNqRhu8k',
+    userPoolWebClientId: '1ppaqhvip1k0eaavn9om4sbmor', 
+    identityPoolId: 'ap-northeast-1:37ac0cf2-13c7-41a0-97f5-4002bbb787c9'
+  }
+} 
+Amplify.configure(amplifyConfig)
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

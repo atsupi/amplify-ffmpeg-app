@@ -4,14 +4,8 @@
     "apiName": "amplifyffmpegapp",
     "serviceName": "AppSync",
     "defaultAuthType": {
-      "mode": "API_KEY",
-      "expirationTime": 7
-    },
-    "additionalAuthTypes": [
-      {
-        "mode": "AMAZON_COGNITO_USER_POOLS",
-        "cognitoUserPoolId": "authamplifyffmpegapp85b1cea9"
-      }
-    ]
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authamplifyffmpegapp12c9074e"
+    }
   }
 }

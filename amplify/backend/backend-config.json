@@ -1,6 +1,6 @@
 {
   "auth": {
-    "amplifyffmpegapp85b1cea9": {
+    "amplifyffmpegapp12c9074e": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -32,7 +32,7 @@
       "dependsOn": [
         {
           "category": "auth",
-          "resourceName": "amplifyffmpegapp85b1cea9",
+          "resourceName": "amplifyffmpegapp12c9074e",
           "attributes": [
             "UserPoolId"
           ]
@@ -41,28 +41,16 @@
       "output": {
         "authConfig": {
           "defaultAuthentication": {
-            "authenticationType": "API_KEY",
-            "apiKeyConfig": {
-              "apiKeyExpirationDays": 7
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authamplifyffmpegapp12c9074e"
             }
           },
-          "additionalAuthenticationProviders": [
-            {
-              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
-              "userPoolConfig": {
-                "userPoolId": "authamplifyffmpegapp85b1cea9"
-              }
-            }
-          ]
+          "additionalAuthenticationProviders": []
         }
       }
     }
   },
-  "hosting": {
-    "amplifyhosting": {
-      "service": "amplifyhosting",
-      "type": "cicd",
-      "lastPushTimeStamp": "2022-11-13T10:57:26.853Z"
-    }
-  }
+  "hosting": {},
+  "function": {}
 }

@@ -26,16 +26,10 @@
     },
     "categories": {
       "auth": {
-        "amplifyffmpegapp85b1cea9": {}
+        "amplifyffmpegapp12c9074e": {}
       },
       "api": {
         "amplifyffmpegapp": {}
-      },
-      "hosting": {
-        "amplifyhosting": {
-          "appId": "dwti3d2f43oqf",
-          "type": "cicd"
-        }
       }
     }
   }
